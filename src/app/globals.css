@@ -8,6 +8,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-one: #1e1e2f; /* Deep muted navy */
+  --color-two: #2c2f46; /* Slate gray-blue */
+  --color-three: #6c63ff; /* Soft indigo accent */
+  --color-four: #afade8; /* Muted lavender */
+  --color-five: #e6e6f7; /* Very soft gray-lavender */
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,6 +22,11 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --two: #454ade;
+    --one: #1b1f3b;
+    --three: #b14aed;
+    --four: #c874d9;
+    --five: #e1bbc9;
   }
 }
 
