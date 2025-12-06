@@ -5,6 +5,10 @@ import { SearchResult } from "@/types/search";
 import { searchSite } from "@/lib/api";
 import SearchResultCard from "@/components/SearchResult";
 import { Globe, Search } from "lucide-react";
+import { Montserrat } from "next/font/google";
+const monster = Montserrat({
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const [url, setUrl] = useState<string>("");
@@ -41,7 +45,9 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-two p-6 text-five">
+    <main
+      className={`min-h-screen bg-two p-6 text-five ${monster.className}`}
+    >
       <div className="max-w-4xl mx-auto">
         <header className="text-center py-8">
           <h1 className="text-4xl font-bold text-white">

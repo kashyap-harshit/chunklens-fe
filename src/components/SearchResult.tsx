@@ -1,3 +1,4 @@
+"use client"
 import { SearchResult } from "@/types/search";
 import { useState } from "react";
 
@@ -15,7 +16,7 @@ export default function SearchResultCard({ result }: { result: SearchResult }) {
           <p className="text-xs text-four mt-1">Path: {result.path}</p>
         </div>
 
-        <span className="px-2 py-1 bg-three text-two rounded-full text-sm">
+        <span className="px-2 py-1 bg-three text-two rounded-sm w-24 text-xs text-center">
           {scorePercent}% match
         </span>
       </div>
@@ -29,7 +30,7 @@ export default function SearchResultCard({ result }: { result: SearchResult }) {
 
       {showHtml && (
         <pre className="mt-3 bg-two p-3  text-sm overflow-auto border border-four text-five">
-          <code>{result.html_preview}</code>
+          <code className="">{result.html_preview}</code>
         </pre>
       )}
     </article>
